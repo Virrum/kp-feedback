@@ -1,8 +1,8 @@
 (function() {
     'use strict';
     var socketUrl = 'ws://' + location.host;
-    var WebSocket = new WebSocket(socketUrl);
-    console.log(socketUrl, WebSocket);
+    var theSocket = new WebSocket(socketUrl);
+    console.log(socketUrl, theSocket);
     var app = {
         // webSocket = new WebSocket(socketUrl),
         heading: document.querySelector("h1"),
