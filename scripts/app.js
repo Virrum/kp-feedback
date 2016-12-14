@@ -1,10 +1,10 @@
 (function() {
     'use strict';
-
+    var socketUrl = 'ws://' + location.host;
+    console.log(socketUrl);
     var app = {
-        hello: document.querySelector("h1")
+        // webSocket = new WebSocket(socketUrl),
+        heading: document.querySelector("h1"),
+        subheading: document.querySelector("h2")
     };
-
-
-    app.hello.innerHTML("JS was here")
 })();
